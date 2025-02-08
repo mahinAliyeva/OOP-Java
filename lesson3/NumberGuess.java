@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Numbers
+public class NumberGuess
 {
     public static void main(String[] args)
     {
