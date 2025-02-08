@@ -1,14 +1,14 @@
 Person
 ----------------
-- name: String
++ name: String
 - age: int
 - email: String
 - gender: char
 - city: String
 ---------------------
-+ Person(name, age, email, gender, city)
-+ greet(): String
-+ celebrateBirthday(): void
-+ relocate(newCity: String): void
-+ isAdult(): boolean
-+ getDetails(): String
+Person(name, age, email, gender, city)
+greet(): String
+celebrateBirthday(): void
+relocate(newCity: String): void
+isAdult(): boolean
+getDetails(): String
