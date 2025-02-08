@@ -19,6 +19,7 @@ public class ShipBattle
             }
         }
 
+        // The game will be written with the area-shooting feature (covering 3 adjacent cells)
         boolean isHorizontal = random.nextBoolean();
 
         int targetRow, targetCol;
