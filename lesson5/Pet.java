@@ -10,17 +10,14 @@ public class Pet {
     private int trickLevel;
     private String[] habits;
 
-    // Static initialization block
     static {
-        System.out.println("Loading class: Pet");
+        System.out.println("Loading class: lesson3.Pet");
     }
 
-    // Non-static initialization block
     {
-        System.out.println("Creating new Pet object");
+        System.out.println("Creating new lesson3.Pet object");
     }
 
-    // Constructors
     public Pet() {}
 
     public Pet(String species, String nickname) {
@@ -36,7 +33,6 @@ public class Pet {
         this.habits = habits;
     }
 
-    // Getters & Setters
     public String getSpecies() { return species; }
     public void setSpecies(String species) { this.species = species; }
 
@@ -52,7 +48,7 @@ public class Pet {
     public String[] getHabits() { return habits; }
     public void setHabits(String[] habits) { this.habits = habits; }
 
-    // Pet Actions
+    // lesson3.Pet Actions
     public void eat() {
         System.out.println("I am eating");
     }
@@ -65,7 +61,6 @@ public class Pet {
         System.out.println("I need to cover it up");
     }
 
-    // equals & hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -79,7 +74,6 @@ public class Pet {
         return Objects.hash(species, nickname, age, trickLevel);
     }
 
-    // toString
     @Override
     public String toString() {
         return String.format("%s{nickname='%s', age=%d, trickLevel=%d, habits=%s}", species, nickname, age, trickLevel, Arrays.toString(habits));
