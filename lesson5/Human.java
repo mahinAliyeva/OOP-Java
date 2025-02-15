@@ -11,17 +11,14 @@ public class Human {
     private String[][] schedule;
     private Family family;
 
-    // Static block
     static {
-        System.out.println("Loading class: Human");
+        System.out.println("Loading class: lesson3.Human");
     }
 
-    // Non-static block
     {
-        System.out.println("Creating new Human object");
+        System.out.println("Creating new lesson3.Human object");
     }
 
-    // Constructors
     public Human(String name, String surname, int year) {
         this.name = name;
         this.surname = surname;
@@ -36,7 +33,6 @@ public class Human {
         this.schedule = schedule;
     }
 
-    // Getters & Setters
     public Family getFamily() { return family; }
     public void setFamily(Family family) { this.family = family; }
 
@@ -47,7 +43,6 @@ public class Human {
         }
     }
 
-    // equals & hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -61,9 +56,8 @@ public class Human {
         return Objects.hash(name, surname, year);
     }
 
-    // toString
     @Override
     public String toString() {
-        return String.format("Human{name='%s', surname='%s', year=%d, iq=%d, schedule=%s}", name, surname, year, iq, Arrays.deepToString(schedule));
+        return String.format("lesson3.Human{name='%s', surname='%s', year=%d, iq=%d, schedule=%s}", name, surname, year, iq, Arrays.deepToString(schedule));
     }
 }
