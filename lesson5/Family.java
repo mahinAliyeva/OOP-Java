@@ -10,17 +10,14 @@ public class Family {
     private List<Human> children;
     private Pet pet;
 
-    // Static block
     static {
         System.out.println("Loading class: Family");
     }
 
-    // Non-static block
     {
         System.out.println("Creating new Family object");
     }
 
-    // Constructor
     public Family(Human mother, Human father) {
         this.mother = mother;
         this.father = father;
@@ -29,7 +26,6 @@ public class Family {
         father.setFamily(this);
     }
 
-    // Getters & Setters
     public Human getMother() { return mother; }
     public void setMother(Human mother) { this.mother = mother; }
 
@@ -41,7 +37,6 @@ public class Family {
     public Pet getPet() { return pet; }
     public void setPet(Pet pet) { this.pet = pet; }
 
-    // Methods
     public void addChild(Human child) {
         children.add(child);
         child.setFamily(this);
@@ -60,7 +55,6 @@ public class Family {
         return 2 + children.size();
     }
 
-    // equals & hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -74,7 +68,6 @@ public class Family {
         return Objects.hash(mother, father, children);
     }
 
-    // toString
     @Override
     public String toString() {
         return String.format("Family{mother=%s, father=%s, children=%s, pet=%s}", mother, father, children, pet);
