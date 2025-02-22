@@ -3,9 +3,13 @@ package lesson7;
 public enum Species {
     DOG(false, 4, true),
     CAT(false, 4, true),
-    BIRD(true, 2, false),
+    PARROT(true, 2, false),
     FISH(false, 0, false),
-    SPIDER(false, 8, false);
+    SNAKE(false, 0, false),
+    SPIDER(false, 8, false),
+    HAMSTER(false, 4, true),
+    EAGLE(true, 2, false),
+    HORSE(false, 4, true);
 
     private final boolean canFly;
     private final int numberOfLegs;
@@ -17,12 +21,15 @@ public enum Species {
         this.hasFur = hasFur;
     }
 
-    public boolean canFly() { return canFly; }
-    public int getNumberOfLegs() { return numberOfLegs; }
-    public boolean hasFur() { return hasFur; }
+    public boolean canFly() {
+        return canFly;
+    }
 
-    @Override
-    public String toString() {
-        return String.format("%s{canFly=%b, numberOfLegs=%d, hasFur=%b}", name(), canFly, numberOfLegs, hasFur);
+    public int getNumberOfLegs() {
+        return numberOfLegs;
+    }
+
+    public boolean hasFur() {
+        return hasFur;
     }
 }
