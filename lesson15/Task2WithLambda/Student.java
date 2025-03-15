@@ -1,4 +1,4 @@
-package lesson15
+package lesson15.Task2WithLambda;
 
 public class Student implements Comparable<Student> {
     private final long id;
