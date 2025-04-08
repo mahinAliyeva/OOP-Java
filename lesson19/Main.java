@@ -45,7 +45,7 @@ public class Main {
             mapper.writerWithDefaultPrettyPrinter().writeValue(new File("courses.json"), courses);
             mapper.writerWithDefaultPrettyPrinter().writeValue(new File("exams.json"), exams);
 
-            System.out.println("JSON fayllar yaradildi!");
+            System.out.println("JSON files were created!");
 
         } catch (Exception e) {
             System.err.println("STOP: " + e.getMessage());
